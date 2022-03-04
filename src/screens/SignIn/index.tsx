@@ -60,10 +60,10 @@ export function SignIn() {
             interessantes sobre{"\n"}o mundo da Twitch
           </Description>
 
-          <SignInButton onPress={() => console.log("teeste")}>
+          <SignInButton onPress={signIn}>
             <SignInButtonIcon>
               {isLoggingIn ? (
-                <ActivityIndicator />
+                <ActivityIndicator color={theme.colors.white} />
               ) : (
                 <Fontisto name="twitch" size={20} color={theme.colors.white} />
               )}
